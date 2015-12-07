@@ -1,0 +1,151 @@
+<h1><i class="icon-pencil"></i> Forms</h1>
+
+
+
+<hr />
+
+<h3>Form Setup</h3>
+
+<h4>Form Layouts</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Vertical (default)</th>
+        <td><code>.form-vertical</code> <span class="muted">(not required)</span></td>
+        <td>Stacked, left-aligned labels over controls</td>
+      </tr>
+      <tr>
+        <th>Horizontal</th>
+        <td><code>.form-horizontal</code></td>
+        <td>Float left, right-aligned labels on same line as controls</td>
+      </tr>
+    </tbody>
+  </table>
+  
+<br />
+
+<h4>Form Markup</h4>
+<pre>&lt;form class="form-horizontal"&gt;
+	...
+&lt;/form&gt;
+</pre>
+
+<hr />
+
+<h3>Input Markup</h3>
+
+<h4>Input Markup</h4>
+
+<pre>&lt;div class="control-group"&gt;	
+	&lt;label class="control-label" for="input01"&gt;Text input&lt;/label&gt;
+	
+	&lt;div class="controls"&gt;
+		&lt;input type="text" class="input-large" id="input01"&gt;
+	&lt;/div&gt;	
+&lt;/div&gt;
+</pre>
+
+
+<br />
+
+<h4>Select Markup</h4>
+
+<pre>&lt;div class="control-group"&gt;
+	&lt;label class="control-label" for="select01"&gt;Select list&lt;/label&gt;
+	
+	&lt;div class="controls"&gt;
+		&lt;select id="select01"&gt;
+			&lt;option&gt;something&lt;/option&gt;
+			&lt;option&gt;2&lt;/option&gt;
+			&lt;option&gt;3&lt;/option&gt;
+			&lt;option&gt;4&lt;/option&gt;
+			&lt;option&gt;5&lt;/option&gt;
+		&lt;/select&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+<br />
+
+<h4>Checkbox/Radio Markup</h4>
+
+<pre>&lt;div class="control-group"&gt;
+	&lt;label class="control-label"&gt;Inline checkboxes&lt;/label&gt;
+	
+	&lt;div class="controls"&gt;
+		&lt;label class="checkbox inline"&gt;
+			&lt;input type="checkbox" id="checkbox01" value="option1"&gt;Checkbox #1
+		&lt;/label&gt;
+		&lt;label class="checkbox inline"&gt;
+			&lt;input type="checkbox" id="checkbox02" value="option2"&gt;Checkbox #2
+		&lt;/label&gt;
+		&lt;label class="checkbox inline"&gt;
+			&lt;input type="checkbox" id="checkbox03" value="option3"&gt;Checkbox #3
+		&lt;/label&gt;
+	&lt;/div&gt;
+&lt;/div&gt;	
+</pre>
+
+
+<br />
+
+<h4>Actions</h4>
+
+<pre>&lt;div class="form-actions"&gt;
+	&lt;button type="submit" class="btn btn-primary btn-large"&gt;Save changes&lt;/button&gt;
+	&lt;button class="btn btn-large"&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+
+
+<hr />
+
+
+<h3>Validation</h3>
+
+<a href="http://docs.jquery.com/Plugins/Validation" class="third-party-doc">jQuery Validation Documentation</a>
+
+
+<hr />
+
+
+<h3>Validation Example</h3>
+
+<pre>$('form').validate ({
+	rules: {
+		name: {
+			minlength: 2,
+			required: true
+		}
+		, email: {
+			required: true,
+			email: true
+		}
+	}
+	, focusCleanup: false	
+	, highlight: function(label) {
+		$(label)
+			.closest('.control-group')
+			.removeClass ('success')
+			.addClass('error');
+	}
+	, success: function(label) {
+		$(label)
+			.text('OK!').addClass('valid')
+			.closest('.control-group')
+			.addClass('success');
+	}
+	, errorPlacement: function(error, element) {
+		error.appendTo( element.parents ('.controls') );
+	}
+});
+</pre>

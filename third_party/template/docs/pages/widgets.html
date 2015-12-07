@@ -1,0 +1,249 @@
+<h1><i class="icon-columns"></i> Widgets</h1>
+
+
+
+<hr />
+
+<h3>Basic Widget</h3>
+
+<pre>&lt;div class="widget"&gt;	
+	&lt;div class="widget-content"&gt;
+		-- All content goes here --
+	&lt;/div&gt;	
+&lt;/div&gt;	
+</pre>
+
+<hr />
+
+<h3>Widget w/ Header</h3>
+
+<pre>&lt;div class="widget"&gt;
+	&lt;div class="widget-header"&gt;	
+		&lt;h3&gt;Widget Title&lt;/h3&gt;
+	&lt;/div&gt;
+	
+	&lt;div class="widget-content"&gt;
+		-- All content goes here --
+	&lt;/div&gt;	
+&lt;/div&gt;	
+</pre>
+
+<hr />
+
+<h3>Widget Header w/ Icon</h3>
+
+<pre>&lt;div class="widget-header"&gt;	
+	&lt;i class="icon-star"&gt;&lt;/i&gt;
+	&lt;h3&gt;Widget Title&lt;/h3&gt;
+&lt;/div&gt;	
+</pre>
+
+
+<hr />
+
+<h3>Widget w/ No Padding</h3>
+
+<pre>&lt;div class="widget nopad"&gt;
+	&lt;div class="widget-header"&gt;	
+		&lt;h3&gt;Widget Title&lt;/h3&gt;
+	&lt;/div&gt;
+	
+	&lt;div class="widget-content"&gt;
+		-- All content goes here --
+	&lt;/div&gt;	
+&lt;/div&gt;	
+</pre>
+
+
+<hr />
+
+<h3>Widget Plain</h3>
+
+<pre>&lt;div class="widget plain"&gt;
+	&lt;div class="widget-header"&gt;	
+		&lt;h3&gt;Widget Title&lt;/h3&gt;
+	&lt;/div&gt;
+	
+	&lt;div class="widget-content"&gt;
+		-- All content goes here --
+	&lt;/div&gt;	
+&lt;/div&gt;	
+</pre>
+
+
+
+
+<hr />
+
+
+<h3>Widget Tabs</h3>
+
+<pre>
+&lt;div class="widget"&gt;
+					
+	&lt;div class="widget-header"&gt;
+	&lt;/div&gt; &lt;!-- /.widget-header --&gt;
+	
+	&lt;div class="widget-tabs"&gt;
+		&lt;ul class="nav nav-tabs"&gt;
+		  &lt;li class="active"&gt;&lt;a href="#tab-1"&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
+		  &lt;li&gt;&lt;a href="#tab-2"&gt;Tab 2&lt;/a&gt;&lt;/li&gt;
+		  &lt;li&gt;&lt;a href="#tab-3"&gt;Tab 3&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;		
+	&lt;/div&gt; &lt;!-- /.widget-tabs --&gt;
+	
+	&lt;div class="widget-content"&gt;
+	
+		&lt;div class="tab-content"&gt;
+		
+			&lt;div class="tab-pane active" id="tab-1"&gt;
+			-- CONTENT --	    	
+			&lt;/div&gt;
+			
+			&lt;div class="tab-pane" id="tab-2"&gt;
+			-- CONTENT --	    	
+			&lt;/div&gt;
+			
+			&lt;div class="tab-pane" id="tab-3"&gt;
+			-- CONTENT --	    	
+			&lt;/div&gt;
+		
+		&lt;/div&gt; &lt;!-- /.tab-content --&gt;
+	
+	&lt;/div&gt; &lt;!-- /.widget-content --&gt;
+
+&lt;/div&gt; &lt;!-- /.widget --&gt;
+</pre>
+
+
+
+
+
+<hr />
+
+
+<h3>Widget Toolbars</h3>
+
+<p><strong>NOTE: When adding buttons to toolbar make sure the you add the class <code>.btn-small</code> for correct sizing.</strong></p>
+	
+<h4>Top Toolbar</h4>
+	
+<pre>
+&lt;div class="widget"&gt;
+					
+	&lt;div class="widget-header"&gt;
+		
+	&lt;/div&gt; &lt;!-- /.widget-header --&gt;
+	
+	&lt;div class="widget-toolbar"&gt;
+		&lt;button class="btn btn-small"&gt;Primary Action&lt;/button&gt;
+	&lt;/div&gt; &lt;!-- /.widget-toolbar --&gt;	
+	
+	&lt;div class="widget-content"&gt;		
+		
+	&lt;/div&gt; &lt;!-- /.widget-content --&gt;
+	
+&lt;/div&gt; &lt;!-- /.widget --&gt;
+</pre>
+
+<br />
+
+<h4>Bottom Toolbar</h4>
+
+<p>To create a bottom toolbar move the <code>.widget-toolbar</code> div below <code>.widget-content</code> and add the class <code>.toolbar-bottom</code> to the widget container.</p>
+
+<pre>
+&lt;div class="widget toolbar-bottom"&gt;
+					
+	&lt;div class="widget-header"&gt;
+		
+	&lt;/div&gt; &lt;!-- /.widget-header --&gt;	
+	
+	&lt;div class="widget-content"&gt;		
+		
+	&lt;/div&gt; &lt;!-- /.widget-content --&gt;
+	
+	&lt;div class="widget-toolbar"&gt;
+		&lt;button class="btn btn-small"&gt;Primary Action&lt;/button&gt;
+	&lt;/div&gt; &lt;!-- /.widget-toolbar --&gt;
+	
+&lt;/div&gt; &lt;!-- /.widget --&gt;
+</pre>
+
+
+
+
+<hr />
+
+
+<h3>Widget Header Actions</h3>
+
+<p><strong>NOTE: When adding buttons make sure the you add the class <code>.btn-small</code> for correct sizing.</strong></p>
+
+<pre>
+&lt;div class="widget"&gt;
+					
+	&lt;div class="widget-header"&gt;
+	
+		&lt;h3&gt;Widget Title&lt;/h3&gt;
+		
+		&lt;div class="widget-actions"&gt;
+						
+			&lt;button class="btn btn-small"&gt;Button&lt;/button&gt;
+			
+		&lt;/div&gt; &lt;!-- /.widget-actions --&gt;
+		
+	&lt;/div&gt; &lt;!-- /.widget-header --&gt;	
+	
+&lt;/div&gt; &lt;!-- /.widget --&gt;
+</pre>
+
+
+
+<hr />
+
+
+<h3>Widget Full Calendar</h3>
+
+<p><strong>Check the <a href="#calendar">Calendar documentation</a> on how to setup and populate the calendar.</strong></p>
+
+<pre>
+&lt;div class="widget widget-fullcalendar"&gt;
+	
+	&lt;div class="widget-header"&gt;
+		&lt;h3&gt;Full Calendar&lt;/h3&gt;
+	&lt;/div&gt; &lt;!-- /.widget-header --&gt;					
+	
+	&lt;div class="widget-content"&gt;
+		
+		&lt;div id="calendar-holder"&gt;&lt;/div&gt; &lt;!-- /#calendar-holder --&gt;
+		
+	&lt;/div&gt; &lt;!-- /widget-content --&gt;
+	
+&lt;/div&gt; &lt;!-- /widget --&gt;
+</pre>
+
+
+
+
+
+<hr />
+
+
+<h3>Widget Mini Calendar</h3>
+
+
+<pre>
+&lt;div class="widget widget-minicalendar"&gt;
+
+	&lt;div class="widget-header"&gt;
+		&lt;h3&gt;Mini Calendar&lt;/h3&gt;
+	&lt;/div&gt; &lt;!-- /.widget-header --&gt;
+	
+	
+	&lt;div class="widget-content"&gt;
+		&lt;div id="datepicker-inline"&gt;&lt;/div&gt; &lt;!-- /#datepicker-inline --&gt;
+	&lt;/div&gt; &lt;!-- /.widget-content --&gt;
+
+&lt;/div&gt; &lt;!-- /.widget --&gt;
+</pre>

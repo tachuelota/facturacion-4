@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tabs & Accordions | Slate Admin 2.0</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Styles -->
+<link href="./css/bootstrap.css" rel="stylesheet">
+<link href="./css/bootstrap-responsive.css" rel="stylesheet">
+<link href="./css/bootstrap-overrides.css" rel="stylesheet">
+
+<link href="./css/ui-lightness/jquery-ui-1.8.21.custom.css" rel="stylesheet">
+
+<link href="./css/slate.css" rel="stylesheet">
+<link href="./css/slate-responsive.css" rel="stylesheet">  
+
+<!-- Javascript -->
+<script src="./js/jquery-1.7.2.min.js"></script>
+<script src="./js/jquery-ui-1.8.21.custom.min.js"></script>
+<script src="./js/jquery.ui.touch-punch.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+
+<script src="./js/Slate.js"></script>
+
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+ 	
+  	
+<div id="header">
+	
+	<div class="container">			
+		
+		<h1><a href="./">Slate Admin 2.0</a></h1>			
+		
+		<div id="info">				
+			
+			<a href="javascript:;" id="info-trigger">
+				<i class="icon-cog"></i>
+			</a>
+			
+			<div id="info-menu">
+				
+				<div class="info-details">
+				
+					<h4>Welcome back, John D.</h4>
+					
+					<p>
+						Logged in as Admin.
+						<br>
+						You have <a href="javascript:;">5 messages.</a>
+					</p>
+					
+				</div> <!-- /.info-details -->
+				
+				<div class="info-avatar">
+					
+					<img src="./img/avatar.jpg" alt="avatar">
+					
+				</div> <!-- /.info-avatar -->
+				
+			</div> <!-- /#info-menu -->
+			
+		</div> <!-- /#info -->
+		
+	</div> <!-- /.container -->
+
+</div> <!-- /#header -->
+
+
+<div id="nav">
+		
+	<div class="container">
+		
+		<a href="javascript:;" class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        	<i class="icon-reorder"></i>
+      	</a>
+		
+		<div class="nav-collapse">
+			
+			<ul class="nav">
+		
+				<li class="nav-icon">
+					<a href="./">
+						<i class="icon-home"></i>
+						<span>Home</span>
+					</a>	    				
+				</li>
+				
+				<li class="dropdown active">					
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-th"></i>
+						Components
+						<b class="caret"></b>
+					</a>	
+				
+					<ul class="dropdown-menu">
+						<li><a href="./forms.html">Forms</a></li>
+						<li><a href="./ui-elements.html">UI Elements</a></li>
+						<li><a href="./grid.html">Grid Layout</a></li>
+						<li><a href="./tables.html">Tables</a></li>
+						<li><a href="./widgets.html">Widget Boxes</a></li>
+						<li><a href="./charts.html">Charts</a></li>
+						<li><a href="./tabs.html">Tabs & Accordion</a></li>
+						<li><a href="./buttons.html">Buttons</a></li>
+					</ul>    				
+				</li>
+				
+				<li class="dropdown">					
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-copy"></i>
+						Sample Pages
+						<b class="caret"></b>
+					</a>	
+				
+					<ul class="dropdown-menu">
+						<li><a href="./invoice.html">Invoice</a></li>
+						<li><a href="./faq.html">FAQ</a></li>
+						<li><a href="./pricing.html">Pricing Plans</a></li>
+						<li><a href="./gallery.html">Image Gallery</a></li>
+						<li><a href="./wizard.html">Wizard</a></li>
+						<li><a href="./reports.html">Reports</a></li>
+						<li><a href="./calendar.html">Calendar</a></li>
+					</ul>    				
+				</li>
+				
+				<li class="dropdown">					
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-external-link"></i>
+						Other Pages
+						<b class="caret"></b>
+					</a>	
+				
+					<ul class="dropdown-menu">							
+						<li><a href="./login.html">Login</a></li>
+						<li><a href="./signup.html">Signup</a></li>
+						<li><a href="./error.html">Error</a></li>
+						<li class="dropdown">
+							<a href="javascript:;">
+								Dropdown Menu									
+								<i class="icon-chevron-right sub-menu-caret"></i>
+							</a>
+							
+							<ul class="dropdown-menu sub-menu">
+		                        <li><a href="javascript:;">Dropdown #1</a></li>
+		                        <li><a href="javascript:;">Dropdown #2</a></li>
+		                        <li><a href="javascript:;">Dropdown #3</a></li>
+		                        <li><a href="javascript:;">Dropdown #4</a></li>
+		                    </ul>
+						</li>
+					</ul>    				
+				</li>
+				
+				
+			
+			</ul>
+			
+			
+			<ul class="nav pull-right">
+		
+				<li class="">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+						<button class="search-btn"><i class="icon-search"></i></button>
+					</form>	    				
+				</li>
+				
+			</ul>
+			
+		</div> <!-- /.nav-collapse -->
+		
+	</div> <!-- /.container -->
+	
+</div> <!-- /#nav -->
+
+
+<div id="content">
+		
+	<div class="container">
+		
+		<div id="page-title" class="clearfix">
+			
+			<ul class="breadcrumb">
+			  <li>
+			    <a href="/">Home</a> <span class="divider">/</span>
+			  </li>
+			  <li>
+			    <a href="#">Components</a> <span class="divider">/</span>
+			  </li>
+			  <li class="active">Tabs & Accordion</li>
+			</ul>
+			
+			
+		</div> <!-- /.page-title -->
+	
+		
+		
+		<div class="row">
+			
+		    <div class="span6">
+	      		
+	      		<div class="widget">
+	      			
+	      			<div class="widget-header">
+	      				<h3>Tabs on <em>Top</em></h3>	      				
+      				</div> <!-- /.widget-header -->
+					
+					<div class="widget-content">
+						
+						<div class="tabbable">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+								<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+								<li><a href="#tab3" data-toggle="tab">Section 3</a></li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active" id="tab1">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+									</p>
+								</div>
+								<div class="tab-pane" id="tab2">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+									</p>
+								</div>
+								<div class="tab-pane" id="tab3">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+									</p>
+								</div>
+							</div>
+						</div>
+						
+						
+					</div> <!-- /widget-content -->
+						
+				</div> <!-- /widget -->	
+						
+				
+				<div class="widget">
+	      			
+	      			<div class="widget-header">
+	      				<h3>Tabs on <em>Left</em></h3>	      				
+      				</div> <!-- /.widget-header -->
+					
+					<div class="widget-content">
+						
+						<div class="tabbable tabs-left">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#tab_l1" data-toggle="tab">Section 1</a></li>
+								<li><a href="#tab_l2" data-toggle="tab">Section 2</a></li>
+								<li><a href="#tab_l3" data-toggle="tab">Section 3</a></li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active" id="tab_l1">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+									</p>
+								</div>
+								<div class="tab-pane" id="tab_l2">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+									</p>
+								</div>
+								<div class="tab-pane" id="tab_l3">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+									</p>
+								</div>
+							</div>
+						</div>
+								
+					</div> <!-- /widget-content -->
+						
+				</div> <!-- /widget -->	
+						
+				
+		    </div> <!-- /span6 -->
+		    
+		    
+		    
+		    <div class="span6">
+	      		
+	      		<div class="widget">
+	      			
+	      			<div class="widget-header">
+	      				<h3>Tabs on <em>Bottom</em></h3>	      				
+      				</div> <!-- /.widget-header -->
+					
+					<div class="widget-content">
+						
+						<div class="tabbable tabs-below">
+							<div class="tab-content">
+								<div class="tab-pane active" id="tab_b1">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+									</p>
+								</div>
+								<div class="tab-pane" id="tab_b2">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+									</p>
+								</div>
+								<div class="tab-pane" id="tab_b3">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+									</p>
+								</div>
+							</div>
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#tab_b1" data-toggle="tab">Section 1</a></li>
+								<li><a href="#tab_b2" data-toggle="tab">Section 2</a></li>
+								<li><a href="#tab_b3" data-toggle="tab">Section 3</a></li>
+							</ul>
+						</div>			
+						
+						
+					</div> <!-- /widget-content -->
+						
+				</div> <!-- /widget -->	
+				
+				
+				<div class="widget">
+	      			
+	      			<div class="widget-header">
+	      				<h3>Tabs on <em>Right</em></h3>	      				
+      				</div> <!-- /.widget-header -->
+					
+					<div class="widget-content">
+						
+						<div class="tabbable tabs-right">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#tab_r1" data-toggle="tab">Section 1</a></li>
+								<li><a href="#tab_r2" data-toggle="tab">Section 2</a></li>
+								<li><a href="#tab_r3" data-toggle="tab">Section 3</a></li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active" id="tab_r1">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+									</p>
+								</div>
+								<div class="tab-pane" id="tab_r2">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+									</p>
+								</div>
+								<div class="tab-pane" id="tab_r3">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tellus felis, sit amet interdum tellus. Suspendisse sit amet scelerisque dui. Vivamus faucibus magna quis augue venenatis ullamcorper. Proin eget mauris eget orci lobortis luctus ac a sem. Curabitur feugiat, eros consectetur egestas iaculis,
+									</p>
+								</div>
+							</div>
+						</div>
+						
+						
+					</div> <!-- /widget-content -->
+						
+				</div> <!-- /widget -->	
+				
+		    </div> <!-- /span6 -->
+		    
+		    
+		    
+		    <div class="span12">
+		    	
+		    	<div class="widget">
+					
+					<div class="widget-header">
+						
+						<h3>
+							<i class="icon-sort"></i> 
+							Basic Accordion
+							
+						</h3>					
+					</div> <!-- /.widget-header -->
+					
+					<div class="widget-content">
+						
+						<div class="accordion" id="basic-accordion">
+				            <div class="accordion-group">
+				              <div class="accordion-heading">
+				                <a class="accordion-toggle" data-toggle="collapse" data-parent="#basic-accordion" href="#collapseOne">
+				                  Collapsible Group Item #1
+				                </a>
+				              </div>
+				              <div id="collapseOne" class="accordion-body in collapse">
+				                <div class="accordion-inner">
+				                  <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt.</p>
+				                  
+				                  <p>Vivamus ac velit eget turpis pharetra placerat bibendum at risus. Vestibulum a sodales mauris. Curabitur et nibh nunc.</p>
+				                </div>
+				              </div>
+				            </div>
+				            <div class="accordion-group">
+				              <div class="accordion-heading">
+				                <a class="accordion-toggle" data-toggle="collapse" data-parent="#basic-accordion" href="#collapseTwo">
+				                  Collapsible Group Item #2
+				                </a>
+				              </div>
+				              <div id="collapseTwo" class="accordion-body collapse">
+				                <div class="accordion-inner">
+				                  <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqu.</p>
+				                  
+				                  <p>Vivamus ac velit eget turpis pharetra placerat bibendum at risus. Vestibulum a sodales mauris. Curabitur et nibh nunc.</p>
+				                </div>
+				              </div>
+				            </div>
+				            <div class="accordion-group">
+				              <div class="accordion-heading">
+				                <a class="accordion-toggle" data-toggle="collapse" data-parent="#basic-accordion" href="#collapseThree">
+				                  Collapsible Group Item #3
+				                </a>
+				              </div>
+				              <div id="collapseThree" class="accordion-body collapse">
+				                <div class="accordion-inner">
+				                  <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3.</p>
+				                  
+				                  <p>Vivamus ac velit eget turpis pharetra placerat bibendum at risus. Vestibulum a sodales mauris. Curabitur et nibh nunc.</p>
+				                  
+				                </div>
+				              </div>
+				            </div>
+				          </div>					
+						
+					</div> <!-- /.widget-content -->
+					
+				</div> <!-- /.widget -->
+		    	
+		    	
+		    </div> <!-- /.span12 -->
+		    
+		    
+		    
+		    <div class="span12">
+		    	
+		    	<div class="widget widget-accordion">
+					
+					<div class="widget-header">
+						
+						<h3>
+							<i class="icon-sort"></i> 
+							Widget Accordion
+							
+						</h3>					
+					</div> <!-- /.widget-header -->
+					
+					<div class="widget-content">
+						
+						<div class="accordion" id="sample-accordion">
+				            <div class="accordion-group">
+				              <div class="accordion-heading">
+				                <a class="accordion-toggle" data-toggle="collapse" data-parent="#sample-accordion" href="#collapseFour">
+				                  Collapsible Group Item #1
+				                </a>
+				                
+				                <i class="icon-plus toggle-icon"></i>
+				              </div>
+				              <div id="collapseFour" class="accordion-body in collapse">
+				                <div class="accordion-inner">
+				                  <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt.</p>
+				                  
+				                  <p>Vivamus ac velit eget turpis pharetra placerat bibendum at risus. Vestibulum a sodales mauris. Curabitur et nibh nunc.</p>
+				                </div>
+				              </div>
+				            </div>
+				            <div class="accordion-group">
+				              <div class="accordion-heading">
+				                <a class="accordion-toggle" data-toggle="collapse" data-parent="#sample-accordion" href="#collapseFive">
+				                  Collapsible Group Item #2
+				                </a>
+				                
+				                <i class="icon-plus toggle-icon"></i>
+				              </div>
+				              <div id="collapseFive" class="accordion-body collapse">
+				                <div class="accordion-inner">
+				                  <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqu.</p>
+				                  
+				                  <p>Vivamus ac velit eget turpis pharetra placerat bibendum at risus. Vestibulum a sodales mauris. Curabitur et nibh nunc.</p>
+				                </div>
+				              </div>
+				            </div>
+				            <div class="accordion-group">
+				              <div class="accordion-heading">
+				                <a class="accordion-toggle" data-toggle="collapse" data-parent="#sample-accordion" href="#collapseSix">
+				                  Collapsible Group Item #3
+				                </a>
+				                
+				                <i class="icon-plus toggle-icon"></i>
+				              </div>
+				              <div id="collapseSix" class="accordion-body collapse">
+				                <div class="accordion-inner">
+				                  <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3.</p>
+				                  
+				                  <p>Vivamus ac velit eget turpis pharetra placerat bibendum at risus. Vestibulum a sodales mauris. Curabitur et nibh nunc.</p>
+				                  
+				                </div>
+				              </div>
+				            </div>
+				          </div>					
+						
+					</div> <!-- /.widget-content -->
+					
+				</div> <!-- /.widget -->
+		    	
+		    	
+		    </div> <!-- /.span12 -->
+		    
+		    
+		    
+		    
+		</div> <!-- /row -->
+		
+		
+		
+		
+	</div> <!-- /.container -->
+	
+</div> <!-- /#content -->
+
+
+
+<div id="footer">	
+		
+	<div class="container">
+		
+		&copy; 2012 Propel UI, all rights reserved.
+		
+	</div> <!-- /.container -->		
+	
+</div> <!-- /#footer -->
+
+
+
+
+
+  </body>
+</html>

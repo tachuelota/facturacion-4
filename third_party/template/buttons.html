@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Buttons & Dropdowns | Slate Admin 2.0</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Styles -->
+<link href="./css/bootstrap.css" rel="stylesheet">
+<link href="./css/bootstrap-responsive.css" rel="stylesheet">
+<link href="./css/bootstrap-overrides.css" rel="stylesheet">
+
+<link href="./css/ui-lightness/jquery-ui-1.8.21.custom.css" rel="stylesheet">
+
+<link href="./css/slate.css" rel="stylesheet">
+<link href="./css/slate-responsive.css" rel="stylesheet">   
+
+
+<!-- Javascript -->
+<script src="./js/jquery-1.7.2.min.js"></script>
+<script src="./js/jquery-ui-1.8.21.custom.min.js"></script>
+<script src="./js/jquery.ui.touch-punch.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+
+<script src="./js/Slate.js"></script>
+
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+ 	
+  	
+<div id="header">
+	
+	<div class="container">			
+		
+		<h1><a href="./">Slate Admin 2.0</a></h1>			
+		
+		<div id="info">				
+			
+			<a href="javascript:;" id="info-trigger">
+				<i class="icon-cog"></i>
+			</a>
+			
+			<div id="info-menu">
+				
+				<div class="info-details">
+				
+					<h4>Welcome back, John D.</h4>
+					
+					<p>
+						Logged in as Admin.
+						<br>
+						You have <a href="javascript:;">5 messages.</a>
+					</p>
+					
+				</div> <!-- /.info-details -->
+				
+				<div class="info-avatar">
+					
+					<img src="./img/avatar.jpg" alt="avatar">
+					
+				</div> <!-- /.info-avatar -->
+				
+			</div> <!-- /#info-menu -->
+			
+		</div> <!-- /#info -->
+		
+	</div> <!-- /.container -->
+
+</div> <!-- /#header -->
+
+
+<div id="nav">
+		
+	<div class="container">
+		
+		<a href="javascript:;" class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        	<i class="icon-reorder"></i>
+      	</a>
+		
+		<div class="nav-collapse">
+			
+			<ul class="nav">
+		
+				<li class="nav-icon">
+					<a href="./">
+						<i class="icon-home"></i>
+						<span>Home</span>
+					</a>	    				
+				</li>
+				
+				<li class="dropdown active">					
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-th"></i>
+						Components
+						<b class="caret"></b>
+					</a>	
+				
+					<ul class="dropdown-menu">
+						<li><a href="./forms.html">Forms</a></li>
+						<li><a href="./ui-elements.html">UI Elements</a></li>
+						<li><a href="./grid.html">Grid Layout</a></li>
+						<li><a href="./tables.html">Tables</a></li>
+						<li><a href="./widgets.html">Widget Boxes</a></li>
+						<li><a href="./charts.html">Charts</a></li>
+						<li><a href="./tabs.html">Tabs & Accordion</a></li>
+						<li><a href="./buttons.html">Buttons</a></li>
+					</ul>    				
+				</li>
+				
+				<li class="dropdown">					
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-copy"></i>
+						Sample Pages
+						<b class="caret"></b>
+					</a>	
+				
+					<ul class="dropdown-menu">
+						<li><a href="./invoice.html">Invoice</a></li>
+						<li><a href="./faq.html">FAQ</a></li>
+						<li><a href="./pricing.html">Pricing Plans</a></li>
+						<li><a href="./gallery.html">Image Gallery</a></li>
+						<li><a href="./wizard.html">Wizard</a></li>
+						<li><a href="./reports.html">Reports</a></li>
+						<li><a href="./calendar.html">Calendar</a></li>
+					</ul>    				
+				</li>
+				
+				<li class="dropdown">					
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-external-link"></i>
+						Other Pages
+						<b class="caret"></b>
+					</a>	
+				
+					<ul class="dropdown-menu">							
+						<li><a href="./login.html">Login</a></li>
+						<li><a href="./signup.html">Signup</a></li>
+						<li><a href="./error.html">Error</a></li>
+						<li class="dropdown">
+							<a href="javascript:;">
+								Dropdown Menu									
+								<i class="icon-chevron-right sub-menu-caret"></i>
+							</a>
+							
+							<ul class="dropdown-menu sub-menu">
+		                        <li><a href="javascript:;">Dropdown #1</a></li>
+		                        <li><a href="javascript:;">Dropdown #2</a></li>
+		                        <li><a href="javascript:;">Dropdown #3</a></li>
+		                        <li><a href="javascript:;">Dropdown #4</a></li>
+		                    </ul>
+						</li>
+					</ul>    				
+				</li>
+				
+				
+			
+			</ul>
+			
+			
+			<ul class="nav pull-right">
+		
+				<li class="">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+						<button class="search-btn"><i class="icon-search"></i></button>
+					</form>	    				
+				</li>
+				
+			</ul>
+			
+		</div> <!-- /.nav-collapse -->
+		
+	</div> <!-- /.container -->
+	
+</div> <!-- /#nav -->
+
+
+<div id="content">
+		
+	<div class="container">
+		
+		
+		<div id="page-title" class="clearfix">
+			
+			<ul class="breadcrumb">
+			  <li>
+			    <a href="/">Home</a> <span class="divider">/</span>
+			  </li>
+			  <li>
+			    <a href="#">Components</a> <span class="divider">/</span>
+			  </li>
+			  <li class="active">Button & Dropdowns</li>
+			</ul>
+			
+		</div> <!-- /.page-title -->
+		
+		
+		<div class="row">
+			
+			<div class="span12">
+	      		
+	      		<div class="widget widget-table">
+						
+					<div class="widget-header">
+						
+						<h3><i class="icon-hand-up"></i>Basic Buttons</h3>
+					</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+						
+						<table class="table table-bordered table-striped">
+						    <thead>
+						      <tr>
+						        <th>Button</th>
+						        <th>class=""</th>
+						        <th>Description</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td><button class="btn">Default</button></td>
+						        <td><code>btn</code></td>
+						        <td>Standard gray button with gradient</td>
+						      </tr>
+						      <tr>
+						        <td><button class="btn btn-primary">Primary</button></td>
+						        <td><code>btn btn-primary</code></td>
+						        <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
+						      </tr>
+						      <tr>
+						        <td><button class="btn btn-secondary">Secondary</button></td>
+						        <td><code>btn btn-secondary</code></td>
+						        <td>Provides extra visual weight and identifies the secondary action in a set of buttons</td>
+						      </tr>
+						      <tr>
+						        <td><button class="btn btn-tertiary">Tertiary</button></td>
+						        <td><code>btn btn-Tertiary</code></td>
+						        <td>Provides extra visual weight and identifies the tertiary action in a set of buttons</td>
+						      </tr>
+						      <tr>
+						        <td><button class="btn btn-info">Info</button></td>
+						        <td><code>btn btn-info</code></td>
+						        <td>Used as an alternative to the default styles</td>
+						      </tr>
+						      <tr>
+						        <td><button class="btn btn-success">Success</button></td>
+						        <td><code>btn btn-success</code></td>
+						        <td>Indicates a successful or positive action</td>
+						      </tr>
+						      <tr>
+						        <td><button class="btn btn-warning">Warning</button></td>
+						        <td><code>btn btn-warning</code></td>
+						        <td>Indicates caution should be taken with this action</td>
+						      </tr>
+						      <tr>
+						        <td><button class="btn btn-danger">Danger</button></td>
+						        <td><code>btn btn-danger</code></td>
+						        <td>Indicates a dangerous or potentially negative action</td>
+						      </tr>
+						      <tr>
+						        <td><button class="btn btn-inverse">Inverse</button></td>
+						        <td><code>btn btn-inverse</code></td>
+						        <td>Alternate dark gray button, not tied to a semantic action or use</td>
+						      </tr>
+						    </tbody>
+						  </table>
+						
+						
+					</div> <!-- /widget-content -->
+						
+				</div> <!-- /widget -->	
+				
+		    </div> <!-- /span12 -->
+		    
+		    
+		    <div class="span6">
+	      		
+	      		<div class="widget nopad">
+						
+					<div class="widget-header">
+						
+						<h3><i class="icon-hand-up"></i>Sizes</h3>
+					</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Large Button
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">								
+								<button class="btn btn-primary btn-large">Default</button>
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Regular Button
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">								
+								<button class="btn btn-primary">Default</button>
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Small Button
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">								
+								<button class="btn btn-primary btn-small">Default</button>
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Mini Button
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">								
+								<button class="btn btn-primary btn-mini">Default</button>
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						
+						
+		    
+					</div> <!-- /widget-content -->
+						
+				</div> <!-- /widget -->	
+				
+		    
+		    
+		    
+		    
+		    
+	      		
+	      		<div class="widget nopad">
+						
+					<div class="widget-header">
+						
+						<h3><i class="icon-hand-up"></i>States &amp; Toggles</h3>
+					</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+						
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Single Toggle
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">								
+								<button class="btn btn-primary active" data-toggle="button">Single Toggle</button>
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Checkbox
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">								
+								<div class="btn-group" data-toggle="buttons-checkbox">
+				                    <button class="btn btn-primary">Left</button>
+				                    <button class="btn btn-primary active">Middle</button>
+				                    <button class="btn btn-primary active">Right</button>
+				                  </div>
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Radio
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">								
+								<div class="btn-group" data-toggle="buttons-radio">
+				                    <button class="btn btn-primary active">Left</button>
+				                    <button class="btn btn-primary">Middle</button>
+				                    <button class="btn btn-primary">Right</button>
+				                  </div>
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						
+					</div> <!-- /widget-content -->
+						
+				</div> <!-- /widget -->	
+				
+		    </div> <!-- /span6 -->
+		    
+		    
+		    
+		    
+		    
+		    <div class="span6">
+	      		
+	      		<div class="widget nopad">
+						
+					<div class="widget-header">
+						
+						<h3><i class="icon-hand-up"></i>Dropdowns</h3>
+					</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+						
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Large Dropdowns
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">	
+								
+								<div class="btn-toolbar">							
+									
+									<div class="btn-group">
+								          <button class="btn btn-primary btn-large dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></button>
+								          <ul class="dropdown-menu">
+								            <li><a href="#">Action</a></li>
+								            <li><a href="#">Another action</a></li>
+								            <li><a href="#">Something else here</a></li>
+								            <li class="divider"></li>
+								            <li><a href="#">Separated link</a></li>
+								          </ul>
+								        </div><!-- /btn-group -->
+								        
+								        <div class="btn-group">
+								          <button class="btn btn-primary btn-large">Dropdown</button>
+								          <button class="btn btn-primary btn-large dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+								          <ul class="dropdown-menu">
+								            <li><a href="#">Action</a></li>
+								            <li><a href="#">Another action</a></li>
+								            <li><a href="#">Something else here</a></li>
+								            <li class="divider"></li>
+								            <li><a href="#">Separated link</a></li>
+								          </ul>
+								        </div><!-- /btn-group -->
+							        
+						        	</div> <!-- /btn-toolbar -->
+					        
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Regular Dropdowns
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">								
+								
+								<div class="btn-toolbar">
+									
+									<div class="btn-group">
+								          <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></button>
+								          <ul class="dropdown-menu">
+								            <li><a href="#">Action</a></li>
+								            <li><a href="#">Another action</a></li>
+								            <li><a href="#">Something else here</a></li>
+								            <li class="divider"></li>
+								            <li><a href="#">Separated link</a></li>
+								          </ul>
+								        </div><!-- /btn-group -->
+								        
+								        <div class="btn-group">
+								          <button class="btn btn-inverse">Dropdown</button>
+								          <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+								          <ul class="dropdown-menu">
+								            <li><a href="#">Action</a></li>
+								            <li><a href="#">Another action</a></li>
+								            <li><a href="#">Something else here</a></li>
+								            <li class="divider"></li>
+								            <li><a href="#">Separated link</a></li>
+								          </ul>
+								        </div><!-- /btn-group -->
+							        
+						        	</div> <!-- /btn-toolbar -->
+								
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Small
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">								
+								
+								<div class="btn-toolbar">
+									
+									<div class="btn-group">
+								          <button class="btn btn-primary btn-small dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></button>
+								          <ul class="dropdown-menu">
+								            <li><a href="#">Action</a></li>
+								            <li><a href="#">Another action</a></li>
+								            <li><a href="#">Something else here</a></li>
+								            <li class="divider"></li>
+								            <li><a href="#">Separated link</a></li>
+								          </ul>
+								        </div><!-- /btn-group -->
+								        
+								        <div class="btn-group">
+								          <button class="btn btn-primary btn-small">Dropdown</button>
+								          <button class="btn btn-primary btn-small dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+								          <ul class="dropdown-menu">
+								            <li><a href="#">Action</a></li>
+								            <li><a href="#">Another action</a></li>
+								            <li><a href="#">Something else here</a></li>
+								            <li class="divider"></li>
+								            <li><a href="#">Separated link</a></li>
+								          </ul>
+								        </div><!-- /btn-group -->
+							        
+						        	</div> <!-- /btn-toolbar -->
+								
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Mini
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">								
+								
+								<div class="btn-toolbar">
+									
+									<div class="btn-group">
+								          <button class="btn btn-inverse btn-mini dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></button>
+								          <ul class="dropdown-menu">
+								            <li><a href="#">Action</a></li>
+								            <li><a href="#">Another action</a></li>
+								            <li><a href="#">Something else here</a></li>
+								            <li class="divider"></li>
+								            <li><a href="#">Separated link</a></li>
+								          </ul>
+								        </div><!-- /btn-group -->
+								        
+								        <div class="btn-group">
+								          <button class="btn btn-inverse btn-mini">Dropdown</button>
+								          <button class="btn btn-inverse btn-mini dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+								          <ul class="dropdown-menu">
+								            <li><a href="#">Action</a></li>
+								            <li><a href="#">Another action</a></li>
+								            <li><a href="#">Something else here</a></li>
+								            <li class="divider"></li>
+								            <li><a href="#">Separated link</a></li>
+								          </ul>
+								        </div><!-- /btn-group -->
+							        
+						        	</div> <!-- /btn-toolbar -->
+								
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						
+					</div> <!-- /widget-content -->
+						
+				</div> <!-- /widget -->	
+				
+		    
+		    
+	      		
+	      		<div class="widget nopad">
+						
+					<div class="widget-header">
+						
+						<h3><i class="icon-hand-up"></i>Icons</h3>
+					</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Large Button Icon
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">							
+								<button class="btn btn-primary btn-large">
+									<i class="icon-star"></i> Default									
+								</button>						
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Regular Button Icon
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">							
+								<button class="btn btn-primary">
+									<i class="icon-star"></i> Default									
+								</button>						
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Small Button Icon
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">							
+								<button class="btn btn-primary btn-small">
+									<i class="icon-star"></i> Default									
+								</button>						
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Mini Button Icon
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">							
+								<button class="btn btn-primary btn-mini">
+									<i class="icon-star"></i> Default									
+								</button>						
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						
+					</div> <!-- /widget-content -->
+						
+				</div> <!-- /widget -->	
+				
+		    </div> <!-- /span6 -->
+		    
+		</div>
+		
+		
+	</div> <!-- /.container -->
+	
+</div> <!-- /#content -->
+
+
+
+<div id="footer">	
+		
+	<div class="container">
+		
+		&copy; 2012 Propel UI, all rights reserved.
+		
+	</div> <!-- /.container -->		
+	
+</div> <!-- /#footer -->
+
+
+
+
+
+  </body>
+</html>

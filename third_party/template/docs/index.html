@@ -1,0 +1,1646 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Slate Admin 2.0 Documentation</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">    
+    
+    <!-- Styles -->
+    
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-overrides.css" rel="stylesheet">
+    
+    <link href="./css/docs.css" rel="stylesheet">  
+    
+    <link href="./js/google-code-prettify/prettify.css" rel="stylesheet"> 
+	<script src="./js/google-code-prettify/prettify.js"></script>
+        
+    <!-- Javascript -->
+    
+	<script src="../js/jquery-1.7.2.min.js"></script>   
+	<script src="../js/jquery.ui.touch-punch.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	
+	
+	<script src="./js/jquery.ba-bbq.min.js"></script>
+	<script src="./js/jquery.scrollTo-min.js"></script>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+  </head>
+
+<body>
+	
+	
+	
+<div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#home">Documentation Home</a>
+         
+          <ul class="nav">
+	        <li><a href="javascript:;">Version 1.0</a></li>
+	        <li class="demo"><a href="../index.html" target="_blank">View Demo</a></li>
+	      </ul>
+	      
+          <ul class="nav pull-right">
+	        <li><a href="http://bootstrapadmin.com" target="_blank">Bootstrap Admin</a></li>
+	      </ul>
+        </div>
+      </div>
+    </div>
+	
+	
+	
+	
+<div id="wrapper">
+	
+	<div id="nav">
+		
+		<ul class="nav nav-list">
+			
+			<li class="misc"><a href="#home"><i class="icon-home"></i> Home</a></li>
+			
+			<li class="nav-header">
+			Styles
+			</li>
+			
+			<li><a href="#menu"><i class="icon-sitemap"></i> Menu</a></li>
+			<li><a href="#widgets"><i class="icon-columns"></i> Widgets</a></li>
+			<li><a href="#tables"><i class="icon-th-list"></i> Tables</a></li>
+			<li><a href="#forms"><i class="icon-pencil"></i> Forms</a></li>
+			<li><a href="#buttons"><i class="icon-hand-up"></i> Buttons</a></li>
+			<li><a href="#grid"><i class="icon-th"></i> Grid</a></li>
+			<li><a href="#ui"><i class="icon-beaker"></i> UI Elements</a></li>
+		
+		
+			<li class="nav-header">
+			Pages
+			</li>
+				
+			<li><a href="#pricing"><i class="icon-money"></i> Pricing Plans</a></li>
+			<li><a href="#gallery"><i class="icon-picture"></i> Image Gallery</a></li>
+			<li><a href="#wizard"><i class="icon-magic"></i> Wizard</a></li>
+			<li><a href="#faq"><i class="icon-question-sign"></i> Faq</a></li>
+			<li><a href="#file-manager"><i class="icon-file"></i> File Manager</a></li>
+			<li><a href="#charts"><i class="icon-bar-chart"></i> Charts</a></li>
+			<li><a href="#calendar"><i class="icon-calendar"></i> Calendar</a></li>
+		
+			
+			<li class="nav-header">
+			Customize
+			</li>
+				
+			<li><a href="#themes"><i class="icon-adjust"></i> Themes</a></li>			
+		</ul>
+		
+	</div> <!-- /nav -->
+	
+	
+	<div id="content">		
+
+
+<div id="buttons-content" class="content"><h1><i class="icon-hand-up"></i> Buttons</h1>
+
+
+<hr />
+
+<h3>Markup</h3>
+
+<pre>&lt;a class="btn" href=""&gt;Link&lt;/a&gt;
+	
+&lt;button class="btn" type="submit"&gt;Button&lt;/button&gt;
+
+&lt;input class="btn" type="button" value="Input"&gt;
+
+&lt;input class="btn" type="submit" value="Submit"&gt;
+</pre>
+
+<hr />
+
+
+
+<h3>Semantic Buttons</h3>
+
+<table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Button</th>
+        <th style="width: 160px">class=""</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><button class="btn" href="#">Default</button></td>
+        <td><code>btn</code></td>
+        <td>Standard gray button with gradient</td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-primary" href="#">Primary</button></td>
+        <td><code>btn btn-primary</code></td>
+        <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-secondary" href="#">Secondary</button></td>
+        <td><code>btn btn-secondary</code></td>
+        <td>Provides extra visual weight and identifies the secondary action in a set of buttons</td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-tertiary" href="#">Tertiary</button></td>
+        <td><code>btn btn-tertiary</code></td>
+        <td>Provides extra visual weight and identifies the tertiary action in a set of buttons</td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-info" href="#">Info</button></td>
+        <td><code>btn btn-info</code></td>
+        <td>Used as an alternative to the default styles</td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-success" href="#">Success</button></td>
+        <td><code>btn btn-success</code></td>
+        <td>Indicates a successful or positive action</td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-warning" href="#">Warning</button></td>
+        <td><code>btn btn-warning</code></td>
+        <td>Indicates caution should be taken with this action</td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-danger" href="#">Danger</button></td>
+        <td><code>btn btn-danger</code></td>
+        <td>Indicates a dangerous or potentially negative action</td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-inverse" href="#">Inverse</button></td>
+        <td><code>btn btn-inverse</code></td>
+        <td>Alternate dark gray button, not tied to a semantic action or use</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+<hr />
+
+<h3>Button Sizes</h3>
+
+<ul class="list-class">
+	
+	<li><code>.btn-large</code></li>
+	<li><code>.btn</code></li>
+	<li><code>.btn-small</code></li>
+	<li><code>.btn-mini</code></li>
+	
+</ul>
+
+<hr />
+
+<h3>Disabled State</h3>
+
+<p>For disabled buttons, add the <code>.disabled</code> class to links and the <code>disabled</code> attribute for <code>&lt;button&gt;</code> elements.</p>
+
+
+
+<hr />
+
+
+<h3>Dropdown Markup</h3>
+
+<pre>&lt;div class="btn-group"&gt;
+  &lt;a class="btn dropdown-toggle" data-toggle="dropdown" href="#"&gt;
+    Action
+    &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;!-- dropdown menu links --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+
+<hr />
+
+<h3>Split Button Markup</h3>
+
+<pre>&lt;div class="btn-group"&gt;
+  &lt;button class="btn"&gt;Action&lt;/button&gt;
+  &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
+    &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;!-- dropdown menu links --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre></div><div id="calendar-content" class="content"><h1><i class="icon-calendar"></i> Calendar</h1>
+
+
+
+<hr />
+
+
+<h3>Documentation</h3>
+
+<a href="http://arshaw.com/fullcalendar/docs/" class="third-party-doc">Full Calendar Documentation</a>
+
+<hr />
+
+<h3>Includes</h3>
+
+<h4>Stylesheet</h4>
+
+<pre>&lt;link href="./js/plugins/fullcalendar/fullcalendar.css" rel="stylesheet"&gt;</pre>
+
+<h4>Javascript</h4>
+
+<pre>&lt;script src="./js/plugins/fullcalendar/fullcalendar.min.js"&gt;&lt;/script&gt;</pre>
+
+
+<hr />
+
+<h3>Container</h3>
+
+<pre>&lt;div id="calendar-holder"&gt;&lt;/div&gt;</pre>
+
+
+<hr />
+
+<h3>Javascript</h3>
+
+<pre>$('#calendar-holder').fullCalendar({
+	header: {
+		left: 'prev, next',
+		center: 'title',
+		right: 'month,basicWeek,basicDay,'
+	}
+	, events: [
+		{
+			title: 'Long Event',
+			start: new Date(y, m, d-5),
+			end: new Date(y, m, d-2),
+			color: '#3C4049'
+		},
+		{
+			id: 999,
+			title: 'Repeating Event',
+			start: new Date(y, m, 19, 16, 0),
+			end: new Date (y, m, 22, 16, 0),
+			allDay: false,
+			color: '#3C4049'
+		}
+	]
+});
+</pre></div><div id="charts-content" class="content"><h1><i class="icon-bar-chart"></i> Charts</h1>
+
+
+
+<hr />
+
+<h3>Documentation</h3>
+
+<p><a href="http://code.google.com/p/flot/" class="third-party-doc">jQuery Flot Documentation</a></p>
+
+
+<hr />
+
+<h3>Helper</h3>
+
+<p>Add the class <code>.chart-holder</code> to your div that is going to contain the chart. This helper class give the chart container a default height which it needs to display properly.</p>
+
+<pre>&lt;div id="bar-chart" class="chart-holder"&gt;&lt;/div&gt;</pre></div><div id="error-content" class="content"><h1>Page Not Found</h1></div><div id="faq-content" class="content"><h1><i class="icon-question-sign"></i> Faq</h1>
+
+
+
+<hr />
+
+<h3>Includes</h3>
+
+<h4>Stylesheet</h4>
+
+<pre>&lt;link href="./js/plugins/faq/faq.css" rel="stylesheet"&gt;
+</pre>
+
+<h4>Javascript</h4>
+<pre>&lt;script src="./js/plugins/faq/faq.js"&gt;&lt;/script&gt;
+</pre>
+
+<hr />
+
+<h3>Markup</h3>
+
+<pre>&lt;ol class="faq-list"&gt;
+						
+	&lt;li&gt;		
+		&lt;h4&gt;How can I get my own domain name?&lt;/h4&gt;
+		&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate&lt;/p&gt;
+	&lt;/li&gt;
+	
+	...
+	
+&lt;/ol&gt;			
+			
+</pre>
+
+<hr />
+
+<h3>Javascript</h3>
+
+<pre>$('.faq-list').goFaq ({ 
+	enableSearch: true,
+	enableToc: true,
+	enableStyling: true
+});</pre></div><div id="file-manager-content" class="content"><h1><i class="icon-file"></i> File Manager</h1>
+
+
+
+<hr />
+
+
+<h3>Documentation</h3>
+
+<a href="http://elfinder.org/" class="third-party-doc">El Finder Documentation</a>
+
+<hr />
+
+<h3>Includes</h3>
+
+<h4>Stylesheet</h4>
+
+<pre>&lt;link href="./js/plugins/elfinder/elfinder.css" rel="stylesheet"&gt; </pre>
+
+<h4>Javascript</h4>
+
+<pre>&lt;script src="./js/plugins/elfinder/elfinder.min.js"&gt;&lt;/script&gt;</pre>
+
+<hr />
+
+<h3>Container</h3>
+
+<pre>&lt;div id="file-manager-holder&gt;"&gt;&lt;/div&gt;</pre>
+
+
+<hr />
+
+<h3>Javascript</h3>
+
+<pre>$("#file-manager-holder").elfinder ({
+	url : './js/plugins/elfinder/connectors/php/connector.php', 
+	lang : 'en', 
+	docked : false, 
+	height: 400
+});
+</pre>
+
+</div><div id="forms-content" class="content"><h1><i class="icon-pencil"></i> Forms</h1>
+
+
+
+<hr />
+
+<h3>Form Setup</h3>
+
+<h4>Form Layouts</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Vertical (default)</th>
+        <td><code>.form-vertical</code> <span class="muted">(not required)</span></td>
+        <td>Stacked, left-aligned labels over controls</td>
+      </tr>
+      <tr>
+        <th>Horizontal</th>
+        <td><code>.form-horizontal</code></td>
+        <td>Float left, right-aligned labels on same line as controls</td>
+      </tr>
+    </tbody>
+  </table>
+  
+<br />
+
+<h4>Form Markup</h4>
+<pre>&lt;form class="form-horizontal"&gt;
+	...
+&lt;/form&gt;
+</pre>
+
+<hr />
+
+<h3>Input Markup</h3>
+
+<h4>Input Markup</h4>
+
+<pre>&lt;div class="control-group"&gt;	
+	&lt;label class="control-label" for="input01"&gt;Text input&lt;/label&gt;
+	
+	&lt;div class="controls"&gt;
+		&lt;input type="text" class="input-large" id="input01"&gt;
+	&lt;/div&gt;	
+&lt;/div&gt;
+</pre>
+
+
+<br />
+
+<h4>Select Markup</h4>
+
+<pre>&lt;div class="control-group"&gt;
+	&lt;label class="control-label" for="select01"&gt;Select list&lt;/label&gt;
+	
+	&lt;div class="controls"&gt;
+		&lt;select id="select01"&gt;
+			&lt;option&gt;something&lt;/option&gt;
+			&lt;option&gt;2&lt;/option&gt;
+			&lt;option&gt;3&lt;/option&gt;
+			&lt;option&gt;4&lt;/option&gt;
+			&lt;option&gt;5&lt;/option&gt;
+		&lt;/select&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+<br />
+
+<h4>Checkbox/Radio Markup</h4>
+
+<pre>&lt;div class="control-group"&gt;
+	&lt;label class="control-label"&gt;Inline checkboxes&lt;/label&gt;
+	
+	&lt;div class="controls"&gt;
+		&lt;label class="checkbox inline"&gt;
+			&lt;input type="checkbox" id="checkbox01" value="option1"&gt;Checkbox #1
+		&lt;/label&gt;
+		&lt;label class="checkbox inline"&gt;
+			&lt;input type="checkbox" id="checkbox02" value="option2"&gt;Checkbox #2
+		&lt;/label&gt;
+		&lt;label class="checkbox inline"&gt;
+			&lt;input type="checkbox" id="checkbox03" value="option3"&gt;Checkbox #3
+		&lt;/label&gt;
+	&lt;/div&gt;
+&lt;/div&gt;	
+</pre>
+
+
+<br />
+
+<h4>Actions</h4>
+
+<pre>&lt;div class="form-actions"&gt;
+	&lt;button type="submit" class="btn btn-primary btn-large"&gt;Save changes&lt;/button&gt;
+	&lt;button class="btn btn-large"&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+
+
+<hr />
+
+
+<h3>Validation</h3>
+
+<a href="http://docs.jquery.com/Plugins/Validation" class="third-party-doc">jQuery Validation Documentation</a>
+
+
+<hr />
+
+
+<h3>Validation Example</h3>
+
+<pre>$('form').validate ({
+	rules: {
+		name: {
+			minlength: 2,
+			required: true
+		}
+		, email: {
+			required: true,
+			email: true
+		}
+	}
+	, focusCleanup: false	
+	, highlight: function(label) {
+		$(label)
+			.closest('.control-group')
+			.removeClass ('success')
+			.addClass('error');
+	}
+	, success: function(label) {
+		$(label)
+			.text('OK!').addClass('valid')
+			.closest('.control-group')
+			.addClass('success');
+	}
+	, errorPlacement: function(error, element) {
+		error.appendTo( element.parents ('.controls') );
+	}
+});
+</pre></div><div id="gallery-content" class="content"><h1><i class="icon-picture"></i> Gallery</h1>
+
+
+
+<hr />
+
+<h3>Container</h3>
+
+<pre>&lt;ul class="gallery"&gt;
+	
+&lt;/ul&gt;
+</pre>
+
+<hr />
+
+<h3>Item Html</h3>
+
+<pre>&lt;li&gt;								
+	&lt;div class="frame"&gt;									
+		&lt;div class="img"&gt;
+			&lt;img src="./img/gallery/lr1.png" alt="" /&gt;			
+		&lt;/div&gt; &lt;!-- /img --&gt;	
+		
+		&lt;div class="actions"&gt;
+			&lt;a href="./img/gallery/lr1_large.png" class="zoom"&gt;
+				&lt;i class="icon-search"&gt;&lt;/i&gt;
+			&lt;/a&gt;
+			
+			&lt;a href="#" class="edit"&gt;
+				&lt;i class="icon-pencil"&gt;&lt;/i&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;					
+	&lt;/div&gt;						
+&lt;/li&gt;
+	
+</pre>
+</div><div id="grid-content" class="content"><h1><i class="icon-th"></i> Grid</h1>
+
+
+
+<hr />
+
+<h3>Default Markup</h3>
+
+<pre>&lt;div class="row"&gt;
+  &lt;div class="span4"&gt;...&lt;/div&gt;
+  &lt;div class="span8"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<br />
+
+<h4>Available Grid Classes</h4>
+
+<ul class="list-class">
+	<li><code>.span12</code></li>
+	<li><code>.span11</code></li>
+	<li><code>.span10</code></li>
+	<li><code>.span9</code></li>
+	<li><code>.span8</code></li>
+	<li><code>.span7</code></li>
+	<li><code>.span6</code></li>
+	<li><code>.span5</code></li>
+	<li><code>.span4</code></li>
+	<li><code>.span3</code></li>
+	<li><code>.span2</code></li>
+	<li><code>.span1</code></li>
+</ul>
+
+
+
+<hr />
+
+<h3>Offsetting Columns</h3>
+	
+<pre>&lt;div class="row"&gt;
+  &lt;div class="span4"&gt;...&lt;/div&gt;
+  &lt;div class="span4 offset4"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<br />
+
+<h4>Available Offset Classes</h4>
+
+<ul class="list-class">
+	<li><code>.offset12</code></li>
+	<li><code>.offset11</code></li>
+	<li><code>.offset10</code></li>
+	<li><code>.offset9</code></li>
+	<li><code>.offset8</code></li>
+	<li><code>.offset7</code></li>
+	<li><code>.offset6</code></li>
+	<li><code>.offset5</code></li>
+	<li><code>.offset4</code></li>
+	<li><code>.offset3</code></li>
+	<li><code>.offset2</code></li>
+	<li><code>.offset1</code></li>
+</ul>
+
+
+<hr />
+
+
+<h3>Nested Grid</h3>
+
+<p>Nested rows should include a set of columns that add up to the number of columns of it's parent. For example, two nested <code>.span3</code> columns should be placed within a <code>.span6</code>.</p>
+
+<pre>&lt;div class="row"&gt;
+  &lt;div class="span6"&gt;
+    Level 1 column
+    &lt;div class="row"&gt;
+      &lt;div class="span3"&gt;Level 2&lt;/div&gt;
+      &lt;div class="span3"&gt;Level 2&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;	
+</pre></div><div id="home-content" class="content"><h1>Slate Admin Documentation</h1>
+
+<p>Slate Admin is full featured admin template based on Twitter Bootstrap Framework. Slate comes packaged with many custom made widgets and plugins including pricing tables, faq plugin, custom alerts, growl messages, lightbox plugin, wizard, and calendar among many others.</p>
+
+<hr class="full" />
+
+
+<br />
+
+<div class="shortcuts">
+		
+</div> <!-- /shortcuts -->
+
+</div><div id="menu-content" class="content"><h1><i class="icon-sitemap"></i> Menu</h1>
+
+
+
+<hr />
+
+
+
+
+
+<h3>Container</h3>
+
+<pre>
+&lt;div id="nav"&gt;
+		
+	&lt;div class="container"&gt;
+		
+		&lt;a href="javascript:;" class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse"&gt;
+        	&lt;i class="icon-reorder"&gt;&lt;/i&gt;
+      	&lt;/a&gt;
+		
+		&lt;div class="nav-collapse"&gt;
+			
+			&lt;ul class="nav"&gt;
+				
+				-- ALL ITEMS GO HERE --
+				
+			&lt;/ul&gt;
+			
+		&lt;/div&gt; &lt;!-- /.nav-collapse --&gt;
+		
+	&lt;/div&gt; &lt;!-- /.container --&gt;
+
+&lt;/div&gt; &lt;!-- /#nav --&gt;
+</pre>
+
+
+
+<hr />
+
+<h3>Basic Item</h3>
+
+<pre>
+&lt;li class=""&gt;
+	&lt;a href="./"&gt;
+		Star Link
+	&lt;/a&gt;	    				
+&lt;/li&gt;	
+</pre>
+
+
+
+
+
+<hr />
+
+<h3>Text with Icon</h3>
+
+<pre>
+&lt;li class=""&gt;
+	&lt;a href="./"&gt;
+		&lt;i class="icon-star"&gt;&lt;/i&gt;
+		Star Link
+	&lt;/a&gt;	    				
+&lt;/li&gt;	
+</pre>
+
+
+
+
+
+<hr />
+
+<h3>Icon Only</h3>
+
+<p><strong>NOTE: Be sure to add the class <code>.nav-icon</code> to the top-level LI element and wrap your link text in a <code>span</code> tag so it's hidden.</strong></p>
+<pre>
+&lt;li class="nav-icon"&gt;
+	&lt;a href="./"&gt;
+		&lt;i class="icon-home"&gt;&lt;/i&gt;
+		&lt;span&gt;Home&lt;/span&gt;
+	&lt;/a&gt;	    				
+&lt;/li&gt;	
+</pre>
+
+
+
+
+<hr />
+
+<h3>Dropdown Menu</h3>
+
+<pre>
+&lt;li class="dropdown"&gt;					
+	&lt;a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"&gt;
+		Dropdown
+		&lt;b class="caret"&gt;&lt;/b&gt;
+	&lt;/a&gt;	
+
+	&lt;ul class="dropdown-menu"&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Dropdown 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Dropdown 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Dropdown 3&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;    				
+&lt;/li&gt;	
+</pre>
+
+
+
+
+<hr />
+
+<h3>Multi-Level Dropdown Menu</h3>
+
+<pre>
+&lt;li class="dropdown"&gt;					
+	&lt;a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"&gt;
+		Multi-Level Dropdown
+		&lt;b class="caret"&gt;&lt;/b&gt;
+	&lt;/a&gt;	
+
+	&lt;ul class="dropdown-menu"&gt;							
+		&lt;li&gt;&lt;a href="javascript:;"&gt;Dropdown #1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="javascript:;"&gt;Dropdown #2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="javascript:;"&gt;Dropdown #3&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="dropdown"&gt;
+			&lt;a href="javascript:;"&gt;
+			Dropdown Menu									
+			&lt;i class="icon-chevron-right sub-menu-caret"&gt;&lt;/i&gt;
+			&lt;/a&gt;
+			
+			&lt;ul class="dropdown-menu sub-menu"&gt;
+				&lt;li&gt;&lt;a href="javascript:;"&gt;Dropdown #1&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="javascript:;"&gt;Dropdown #2&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="javascript:;"&gt;Dropdown #3&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="javascript:;"&gt;Dropdown #4&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;    				
+&lt;/li&gt;	
+</pre>
+</div><div id="pricing-content" class="content"><h1><i class="icon-money"></i> Pricing</h1>
+
+
+
+<hr />
+
+<h3>Includes</h3>
+
+<h4>Stylesheet</h4>
+
+<pre>&lt;link href="./css/pages/plans.css" rel="stylesheet"&gt;</pre>
+
+<hr />
+
+<h3>Container</h3>
+
+<pre>&lt;div class="pricing-plans plans-4"&gt;
+
+	--- Plans go here ---
+	
+&lt;/div&gt;
+</pre>
+
+<br />
+
+
+<h4>Number of Plans</h4>
+
+<table class="table">
+	
+	<thead>
+		
+		<tr>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+		
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>.plans-4</td>
+			<td>4 Plans Up</td>
+		</tr>
+		<tr>
+			<td>.plans-3</td>
+			<td>3 Plans Up</td>
+		</tr>
+		<tr>
+			<td>.plans-2</td>
+			<td>2 Plans Up</td>
+		</tr>
+		<tr>
+			<td>.plans-1</td>
+			<td>1 Plans Up</td>
+		</tr>
+	</tbody>
+	
+</table>
+
+<hr />
+
+<h3>Plan Html</h3>
+
+<pre>&lt;div class="plan-container"&gt;
+
+    &lt;div class="plan"&gt;
+    
+        &lt;div class="plan-header"&gt;
+            
+        	&lt;div class="plan-title"&gt;
+        		Micro	        		
+    		&lt;/div&gt; &lt;!-- /plan-title --&gt;
+            
+    		&lt;div class="plan-price"&gt;
+    			&lt;span class="note"&gt;$&lt;/span&gt;15&lt;span class="term"&gt;Per Month&lt;/span&gt;
+		&lt;/div&gt; &lt;!-- /plan-price --&gt;
+			
+        &lt;/div&gt; &lt;!-- /plan-header --&gt;	        
+        
+        &lt;div class="plan-features"&gt;
+        
+			&lt;ul&gt;
+				&lt;li&gt;&lt;strong&gt;Free&lt;/strong&gt; setup&lt;/li&gt;
+				&lt;li&gt;&lt;strong&gt;1&lt;/strong&gt; Website&lt;/li&gt;
+				&lt;li&gt;&lt;strong&gt;2&lt;/strong&gt; Projects&lt;/li&gt;
+				&lt;li&gt;&lt;strong&gt;1GB&lt;/strong&gt; Storage&lt;/li&gt;
+				&lt;li&gt;&lt;strong&gt;$0&lt;/strong&gt; Google Adwords Credit&lt;/li&gt;
+			&lt;/ul&gt;
+			
+		&lt;/div&gt; &lt;!-- /plan-features --&gt;
+		
+		&lt;div class="plan-actions"&gt;				
+			&lt;a href="javascript:;" class="btn"&gt;Purchase Now&lt;/a&gt;				
+		&lt;/div&gt; &lt;!-- /plan-actions --&gt;
+
+	&lt;/div&gt; &lt;!-- /plan --&gt;
+	
+&lt;/div&gt; &lt;!-- /plan-container --&gt;
+	
+		</pre>
+</div><div id="tables-content" class="content"><h1><i class="icon-th-list"></i> Tables</h1>
+
+
+<hr />
+
+<h3>Table Options</h3>
+
+
+<table class="table table-bordered table-striped">
+  <thead>
+      <tr>
+        <th>Name</th>
+        <th style="width: 150px">Class</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Default</td>
+        <td class="muted">None</td>
+        <td>No styles, just columns and rows</td>
+      </tr>
+      <tr>
+        <td>Basic</td>
+        <td>
+          <code>.table</code>
+        </td>
+        <td>Only horizontal lines between rows</td>
+      </tr>
+      <tr>
+        <td>Bordered</td>
+        <td>
+          <code>.table-bordered</code>
+        </td>
+        <td>Rounds corners and adds outer border</td>
+      </tr>
+      <tr>
+        <td>Zebra-stripe</td>
+        <td>
+          <code>.table-striped</code>
+        </td>
+        <td>Adds light gray background color to odd rows (1, 3, 5, etc)</td>
+      </tr>
+      <tr>
+        <td>Condensed</td>
+        <td>
+          <code>.table-condensed</code>
+        </td>
+        <td>Cuts vertical padding in half, from 8px to 4px, within all <code>td</code> and <code>th</code> elements</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+  
+  
+<hr />
+
+<h3>Table Highlight</h3>
+
+<p>For a little change in style add the class <code>.table-highlight</code> to your <code>table</code> tag for a dark blue table header and light blue table striping.</p>
+
+<pre>
+&lt;table class="table table-highlight"&gt;
+
+&lt;/table&gt;
+</pre>
+
+  
+  
+<hr />
+
+<h3>Widget Table</h3>
+
+<h4>Markup</h4>
+
+<pre>&lt;div class="widget widget-table"&gt;
+	
+	&lt;div class="widget-header"&gt;
+		&lt;h3&gt;Widget Table&lt;/div&gt;
+	&lt;/div&gt;
+	
+	&lt;div class="widget-content"&gt;
+	
+		&lt;table class="table table-striped table-bordered"&gt;
+			
+			--- TABLE DATA GOES HERE ---
+		
+		&lt;/table&gt;
+		
+	&lt;/div&gt;
+	
+	
+&lt;/div&gt;	
+</pre>
+
+  
+  
+<hr />
+
+<h3>Data Table Plugin</h3>
+
+<h4>Includes</h4>
+
+<pre>&lt;link href="./js/plugins/datatables/DT_bootstrap.css" rel="stylesheet"&gt;
+	
+&lt;script src="./js/plugins/datatables/jquery.dataTables.js"&gt;&lt;/script&gt;
+&lt;script src="./js/plugins/datatables/DT_bootstrap.js"&gt;&lt;/script&gt;
+</pre>
+
+<h4>Helper</h4>
+
+<p>You can have the Data Plugin automatically attached by adding the following class to your tables: </p>
+
+<pre>&lt;table class="table <strong>data-table</strong>"&gt;</pre>
+
+<h4>Javascript</h4>
+
+<pre>$('.dataTable').dataTable ({
+	sDom: "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
+	sPaginationType: "bootstrap",
+	oLanguage: {
+		"sLengthMenu": "_MENU_ records per page"
+	}
+});
+</pre>
+
+
+<hr />
+
+<h3>Responsive Table</h3>
+
+<p>To create a horizontally scrolling data table on mobile devices apply the following class to your table: </p>
+
+<pre>&lt;table class="table <strong>responsive</strong>"&gt;</pre>
+
+</div><div id="themes-content" class="content"><h1><i class="icon-adjust"></i> Color Themes</h1>
+
+
+<hr />
+
+
+<h3>Blue Theme</h3>
+
+<p>Corona Admin comes packaged with one example theme which can be found in the directory <code>/css/themes/</code>. Include the follow css stylesheets <strong>AFTER</strong> all other stylesheets.</p>
+
+<pre>&lt;link href="./css/themes/blue/theme.css" rel="stylesheet"&gt;
+</pre>
+
+
+<hr />
+
+
+<h3>Chart Colors</h3>
+
+<p>You can modify the chart colors by opening the <code>/js/Corona.js</code> file and modifying the chartColors variable.</p>
+
+
+<pre>var chartColors = ["#FF9900", "#222222", "#555555", "#888888"];</pre>
+
+
+<hr />
+
+
+<h3>Custom Theme</h3>
+
+<p>To get started creating a custom theme, you should use the provided blue theme as your base and modify the styles contained in <code>theme.css</code> as necessary. </p></div><div id="ui-content" class="content"><h1><i class="icon-beaker"></i> UI Elements</h1>
+
+
+
+<hr class="full" />
+
+
+<h2>Lightbox</h2>
+
+<a href="./plugins/lightbox/" class="third-party-doc">Lightbox Evolution Documentation</a>
+
+
+<hr class="full" />
+
+
+<h2>Modal</h2>
+
+<a href="http://twitter.github.com/bootstrap/javascript.html#modals" class="third-party-doc">Modal Documentation</a>
+
+
+<hr class="full" />
+
+
+<h2>Guidely</h2>
+
+<a href="./plugins/guidely/HOWTO.html" class="third-party-doc">Guidely Documentation</a>
+
+
+<hr class="full" />
+
+
+<h2>Growl Messages</h2>
+
+<a href="./plugins/msgGrowl/" class="third-party-doc">MsgGrowl Documentation</a>
+
+
+<hr class="full" />
+
+<h2>Alert Messages</h2>
+
+<a href="./plugins/msgAlert/" class="third-party-doc">MsgAlert Documentation</a>
+
+<hr class="full" />
+
+
+
+
+
+<h2>Sliders</h2>
+
+<a href="http://jqueryui.com/demos/slider/" class="third-party-doc">jQuery Slider Documentation</a>
+
+
+<hr class="full" />
+
+<h2>Progress Bars</h2>
+
+<a href="http://twitter.github.com/bootstrap/components.html#progress" class="third-party-doc">Bootstrap Progress Bar Documentation</a>
+
+<hr class="full" />
+
+<h2>Tabs</h2>
+
+<a href="http://twitter.github.com/bootstrap/components.html#navs" class="third-party-doc">Bootstrap Tab Documentation</a>
+
+
+
+<hr class="full" />
+
+<h2>Tooltip</h2>
+<a href="http://twitter.github.com/bootstrap/javascript.html#tooltips" class="third-party-doc">Bootstrap Tooltip Documentation</a>
+
+<hr class="full" />
+
+<h2>Popover</h2>
+
+<a href="http://twitter.github.com/bootstrap/javascript.html#popovers" class="third-party-doc">Bootstrap Popover Documentation</a>
+
+<hr class="full" />
+
+
+<h2>Pagination</h2>
+
+
+<a href="http://twitter.github.com/bootstrap/components.html#pagination" class="third-party-doc">Bootstrap Pagination Documentation</a>
+
+
+
+</div><div id="widgets-content" class="content"><h1><i class="icon-columns"></i> Widgets</h1>
+
+
+
+<hr />
+
+<h3>Basic Widget</h3>
+
+<pre>&lt;div class="widget"&gt;	
+	&lt;div class="widget-content"&gt;
+		-- All content goes here --
+	&lt;/div&gt;	
+&lt;/div&gt;	
+</pre>
+
+<hr />
+
+<h3>Widget w/ Header</h3>
+
+<pre>&lt;div class="widget"&gt;
+	&lt;div class="widget-header"&gt;	
+		&lt;h3&gt;Widget Title&lt;/h3&gt;
+	&lt;/div&gt;
+	
+	&lt;div class="widget-content"&gt;
+		-- All content goes here --
+	&lt;/div&gt;	
+&lt;/div&gt;	
+</pre>
+
+<hr />
+
+<h3>Widget Header w/ Icon</h3>
+
+<pre>&lt;div class="widget-header"&gt;	
+	&lt;i class="icon-star"&gt;&lt;/i&gt;
+	&lt;h3&gt;Widget Title&lt;/h3&gt;
+&lt;/div&gt;	
+</pre>
+
+
+<hr />
+
+<h3>Widget w/ No Padding</h3>
+
+<pre>&lt;div class="widget nopad"&gt;
+	&lt;div class="widget-header"&gt;	
+		&lt;h3&gt;Widget Title&lt;/h3&gt;
+	&lt;/div&gt;
+	
+	&lt;div class="widget-content"&gt;
+		-- All content goes here --
+	&lt;/div&gt;	
+&lt;/div&gt;	
+</pre>
+
+
+<hr />
+
+<h3>Widget Plain</h3>
+
+<pre>&lt;div class="widget plain"&gt;
+	&lt;div class="widget-header"&gt;	
+		&lt;h3&gt;Widget Title&lt;/h3&gt;
+	&lt;/div&gt;
+	
+	&lt;div class="widget-content"&gt;
+		-- All content goes here --
+	&lt;/div&gt;	
+&lt;/div&gt;	
+</pre>
+
+
+
+
+<hr />
+
+
+<h3>Widget Tabs</h3>
+
+<pre>
+&lt;div class="widget"&gt;
+					
+	&lt;div class="widget-header"&gt;
+	&lt;/div&gt; &lt;!-- /.widget-header --&gt;
+	
+	&lt;div class="widget-tabs"&gt;
+		&lt;ul class="nav nav-tabs"&gt;
+		  &lt;li class="active"&gt;&lt;a href="#tab-1"&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
+		  &lt;li&gt;&lt;a href="#tab-2"&gt;Tab 2&lt;/a&gt;&lt;/li&gt;
+		  &lt;li&gt;&lt;a href="#tab-3"&gt;Tab 3&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;		
+	&lt;/div&gt; &lt;!-- /.widget-tabs --&gt;
+	
+	&lt;div class="widget-content"&gt;
+	
+		&lt;div class="tab-content"&gt;
+		
+			&lt;div class="tab-pane active" id="tab-1"&gt;
+			-- CONTENT --	    	
+			&lt;/div&gt;
+			
+			&lt;div class="tab-pane" id="tab-2"&gt;
+			-- CONTENT --	    	
+			&lt;/div&gt;
+			
+			&lt;div class="tab-pane" id="tab-3"&gt;
+			-- CONTENT --	    	
+			&lt;/div&gt;
+		
+		&lt;/div&gt; &lt;!-- /.tab-content --&gt;
+	
+	&lt;/div&gt; &lt;!-- /.widget-content --&gt;
+
+&lt;/div&gt; &lt;!-- /.widget --&gt;
+</pre>
+
+
+
+
+
+<hr />
+
+
+<h3>Widget Toolbars</h3>
+
+<p><strong>NOTE: When adding buttons to toolbar make sure the you add the class <code>.btn-small</code> for correct sizing.</strong></p>
+	
+<h4>Top Toolbar</h4>
+	
+<pre>
+&lt;div class="widget"&gt;
+					
+	&lt;div class="widget-header"&gt;
+		
+	&lt;/div&gt; &lt;!-- /.widget-header --&gt;
+	
+	&lt;div class="widget-toolbar"&gt;
+		&lt;button class="btn btn-small"&gt;Primary Action&lt;/button&gt;
+	&lt;/div&gt; &lt;!-- /.widget-toolbar --&gt;	
+	
+	&lt;div class="widget-content"&gt;		
+		
+	&lt;/div&gt; &lt;!-- /.widget-content --&gt;
+	
+&lt;/div&gt; &lt;!-- /.widget --&gt;
+</pre>
+
+<br />
+
+<h4>Bottom Toolbar</h4>
+
+<p>To create a bottom toolbar move the <code>.widget-toolbar</code> div below <code>.widget-content</code> and add the class <code>.toolbar-bottom</code> to the widget container.</p>
+
+<pre>
+&lt;div class="widget toolbar-bottom"&gt;
+					
+	&lt;div class="widget-header"&gt;
+		
+	&lt;/div&gt; &lt;!-- /.widget-header --&gt;	
+	
+	&lt;div class="widget-content"&gt;		
+		
+	&lt;/div&gt; &lt;!-- /.widget-content --&gt;
+	
+	&lt;div class="widget-toolbar"&gt;
+		&lt;button class="btn btn-small"&gt;Primary Action&lt;/button&gt;
+	&lt;/div&gt; &lt;!-- /.widget-toolbar --&gt;
+	
+&lt;/div&gt; &lt;!-- /.widget --&gt;
+</pre>
+
+
+
+
+<hr />
+
+
+<h3>Widget Header Actions</h3>
+
+<p><strong>NOTE: When adding buttons make sure the you add the class <code>.btn-small</code> for correct sizing.</strong></p>
+
+<pre>
+&lt;div class="widget"&gt;
+					
+	&lt;div class="widget-header"&gt;
+	
+		&lt;h3&gt;Widget Title&lt;/h3&gt;
+		
+		&lt;div class="widget-actions"&gt;
+						
+			&lt;button class="btn btn-small"&gt;Button&lt;/button&gt;
+			
+		&lt;/div&gt; &lt;!-- /.widget-actions --&gt;
+		
+	&lt;/div&gt; &lt;!-- /.widget-header --&gt;	
+	
+&lt;/div&gt; &lt;!-- /.widget --&gt;
+</pre>
+
+
+
+<hr />
+
+
+<h3>Widget Full Calendar</h3>
+
+<p><strong>Check the <a href="#calendar">Calendar documentation</a> on how to setup and populate the calendar.</strong></p>
+
+<pre>
+&lt;div class="widget widget-fullcalendar"&gt;
+	
+	&lt;div class="widget-header"&gt;
+		&lt;h3&gt;Full Calendar&lt;/h3&gt;
+	&lt;/div&gt; &lt;!-- /.widget-header --&gt;					
+	
+	&lt;div class="widget-content"&gt;
+		
+		&lt;div id="calendar-holder"&gt;&lt;/div&gt; &lt;!-- /#calendar-holder --&gt;
+		
+	&lt;/div&gt; &lt;!-- /widget-content --&gt;
+	
+&lt;/div&gt; &lt;!-- /widget --&gt;
+</pre>
+
+
+
+
+
+<hr />
+
+
+<h3>Widget Mini Calendar</h3>
+
+
+<pre>
+&lt;div class="widget widget-minicalendar"&gt;
+
+	&lt;div class="widget-header"&gt;
+		&lt;h3&gt;Mini Calendar&lt;/h3&gt;
+	&lt;/div&gt; &lt;!-- /.widget-header --&gt;
+	
+	
+	&lt;div class="widget-content"&gt;
+		&lt;div id="datepicker-inline"&gt;&lt;/div&gt; &lt;!-- /#datepicker-inline --&gt;
+	&lt;/div&gt; &lt;!-- /.widget-content --&gt;
+
+&lt;/div&gt; &lt;!-- /.widget --&gt;
+</pre></div><div id="wizard-content" class="content"><h1><i class="icon-magic"></i> Wizard</h1>
+
+
+<hr />
+
+<h3>Includes</h3>
+
+<h4>Stylesheet</h4>
+
+<pre>&lt;link href="./js/plugins/smartwizard/smart_wizard.modified.css" rel="stylesheet"&gt;
+</pre>
+
+<h4>Javascript</h4>
+
+<pre>&lt;script src="./js/plugins/smartwizard/jquery.smartWizard-2.0.modified.js"&gt;&lt;/script&gt;
+</pre>
+
+<hr />
+
+<h3>Wizard Container</h3>
+
+<pre>&lt;div id="wizard" class="swMain"&gt;
+	--- Wizard Goes Here ---
+&lt;/div&gt;
+</pre>
+
+
+<hr />
+
+<h3>Step Navigation</h3>
+
+<pre>&lt;ul class="wizard-steps"&gt;
+	&lt;li&gt;
+		&lt;a href="#step-1"&gt;
+			&lt;div class="wizard-step-number"&gt;1&lt;/div&gt;
+			&lt;div class="wizard-step-label"&gt;Business Details&lt;/div&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+	...
+	
+&lt;/ul&gt;
+</pre>
+	
+
+<hr />
+
+<h3>Step Container</h3>
+
+<pre>&lt;div id="step-1"&gt;
+	
+	--- Form Elements Go Here ---
+	
+&lt;/div&gt;
+</pre>
+
+
+<hr />
+
+<h3>Javascript</h3>
+
+<pre>$('#wizard').smartWizard ({
+	transitionEffect:'slideleft'
+	, enableFinishButton:false
+});
+</pre>
+	</div>
+</div> <!-- /content -->
+	
+	
+</div> <!-- /wrapper -->
+	
+<script>
+
+$(function () {
+	
+	$('pre').addClass ('prettyprint linenums');
+	prettyPrint ();
+	
+	getToc ();
+	
+	routeContent ();
+	
+	$('#nav a').each (function (i) {
+		
+		if ($(this).parent ().is ('.misc')) { return; }
+		
+		var a = $(this).clone ();
+		
+		var shortcut = $('<a>', {
+			'href': a.attr ('href'),
+			'class': 'shortcut'			
+		});
+		
+		var icon = $('<i>', {
+			'class': 'shortcut-icon ' + a.find ('i').attr ('class')
+		});
+		
+		var label = $('<span>', {
+			'class': 'shortcut-label',
+			'text': a.text ()
+		});		
+		
+		icon.appendTo (shortcut);
+		label.appendTo (shortcut);		
+		shortcut.appendTo ('.shortcuts');
+		
+	});	
+	
+	$('body').append ('<div id="toTop">^ Back to Top</div>');
+	
+	
+	$(window).bind ('hashchange', function (e) {
+		routeContent ();
+	});
+	
+	
+	$('#nav a, .shortcuts a, .brand').live ('click', function (e) {		
+		e.preventDefault ();		
+		location.hash = $(this).attr ('href').split ('#')[1];		
+	});
+	
+	$('#toTop').click(function() {
+		$('body,html').animate({scrollTop:0},800);
+	});
+	
+	$('a.third-party-doc').attr ('target', '_blank');
+	
+	
+	
+});
+
+function routeContent () {
+	
+	var hash = location.hash;
+	hash = hash.split ('#')[1];
+	
+	if (hash === undefined || hash === '') {
+		hash = 'home';
+	}
+	
+	$('#nav li').removeClass ('active');
+	
+	$('a[href=#' + hash + ']').parent ().addClass ('active');
+	
+	$('.content').hide ();
+	
+	var newPage = $('#' + hash + '-content').show ();
+	
+	if (newPage.length < 1) {
+		$("#error-content").show ();
+	}
+		
+			
+	$('body,html').animate({scrollTop:0},0);
+	
+	$(window).scroll(function() {
+		if($(this).scrollTop() != 0) {
+			$('#toTop').fadeIn();	
+		} else {
+			$('#toTop').fadeOut();
+		}
+	});
+ 
+	
+}
+
+function getToc () {
+		
+		
+	$('.content').each (function (i) {
+		
+		var toc = '<ol class="toc">';
+		
+		$(this).find ('h3').each (function (i) {
+			var h3, id, pageSlug, slug;
+			
+			h3 = $(this);
+			pageSlug = slugify ($.trim ($(this).parents ('.content').find ('h1').text ()));
+			id = slugify (h3.text ());
+			slug = pageSlug + '-' + id;
+			
+			
+			
+			toc += '<li><a href="#' + slug + '">' + h3.text () + '</a></li>';
+			
+			h3.attr ('id', slug);
+			h3.text ((i+1) + '. ' + h3.text ());
+
+		});
+		
+		
+		toc += '</ol>';
+		
+		$(this).find ('hr').eq (0).before (toc);
+	});
+		
+	
+	
+	$('.toc').find ('a').bind ('click', function (e) {
+		e.preventDefault ();	
+		$.scrollTo ( $(this).attr ('href') , 1000 );
+	});
+}
+
+function slugify(text) {
+	text = text.replace(/[^-a-zA-Z0-9,&\s]+/ig, '');
+	text = text.replace(/-/gi, "_");
+	text = text.replace(/\s/gi, "-");
+	text = text.toLowerCase ();
+	return text;
+}
+
+</script>
+	
+</body>
+
+</html>

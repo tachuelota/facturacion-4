@@ -1,0 +1,42 @@
+<h1><i class="icon-file"></i> File Manager</h1>
+
+
+
+<hr />
+
+
+<h3>Documentation</h3>
+
+<a href="http://elfinder.org/" class="third-party-doc">El Finder Documentation</a>
+
+<hr />
+
+<h3>Includes</h3>
+
+<h4>Stylesheet</h4>
+
+<pre>&lt;link href="./js/plugins/elfinder/elfinder.css" rel="stylesheet"&gt; </pre>
+
+<h4>Javascript</h4>
+
+<pre>&lt;script src="./js/plugins/elfinder/elfinder.min.js"&gt;&lt;/script&gt;</pre>
+
+<hr />
+
+<h3>Container</h3>
+
+<pre>&lt;div id="file-manager-holder&gt;"&gt;&lt;/div&gt;</pre>
+
+
+<hr />
+
+<h3>Javascript</h3>
+
+<pre>$("#file-manager-holder").elfinder ({
+	url : './js/plugins/elfinder/connectors/php/connector.php', 
+	lang : 'en', 
+	docked : false, 
+	height: 400
+});
+</pre>
+

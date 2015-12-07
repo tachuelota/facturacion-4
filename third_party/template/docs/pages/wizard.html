@@ -1,0 +1,67 @@
+<h1><i class="icon-magic"></i> Wizard</h1>
+
+
+<hr />
+
+<h3>Includes</h3>
+
+<h4>Stylesheet</h4>
+
+<pre>&lt;link href="./js/plugins/smartwizard/smart_wizard.modified.css" rel="stylesheet"&gt;
+</pre>
+
+<h4>Javascript</h4>
+
+<pre>&lt;script src="./js/plugins/smartwizard/jquery.smartWizard-2.0.modified.js"&gt;&lt;/script&gt;
+</pre>
+
+<hr />
+
+<h3>Wizard Container</h3>
+
+<pre>&lt;div id="wizard" class="swMain"&gt;
+	--- Wizard Goes Here ---
+&lt;/div&gt;
+</pre>
+
+
+<hr />
+
+<h3>Step Navigation</h3>
+
+<pre>&lt;ul class="wizard-steps"&gt;
+	&lt;li&gt;
+		&lt;a href="#step-1"&gt;
+			&lt;div class="wizard-step-number"&gt;1&lt;/div&gt;
+			&lt;div class="wizard-step-label"&gt;Business Details&lt;/div&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	
+	...
+	
+&lt;/ul&gt;
+</pre>
+	
+
+<hr />
+
+<h3>Step Container</h3>
+
+<pre>&lt;div id="step-1"&gt;
+	
+	--- Form Elements Go Here ---
+	
+&lt;/div&gt;
+</pre>
+
+
+<hr />
+
+<h3>Javascript</h3>
+
+<pre>$('#wizard').smartWizard ({
+	transitionEffect:'slideleft'
+	, enableFinishButton:false
+});
+</pre>
+	
