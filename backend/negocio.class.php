@@ -13,6 +13,12 @@ class Negocio{
 	private $nota;
 	private $nota2;
 
+	private $showfax;
+	private $showwhatsapp;
+	private $showemail;
+	private $showheader;
+	private $showfooter;
+
 	public function __construct(){
 
 		$queryn = "SELECT * FROM negocio_settings";
@@ -28,6 +34,15 @@ class Negocio{
 			$this->moneda = $negocio["moneda"];
 			$this->nota = $negocio["nota_factura"];
 			$this->nota2 = $negocio["nota_factura2"];
+			$this->fax = $negocio["fax"];
+			$this->whatsapp = $negocio["whatsapp"];
+			$this->email = $negocio["email"];
+
+			$this->showfax = $negocio["showFax"];
+			$this->showwhatsapp = $negocio["showWhatsapp"];
+			$this->showemail = $negocio["showEmail"];
+			$this->showheader = $negocio["showHeader"];
+			$this->showfooter = $negocio["showFooter"];
 
 
 		}
@@ -65,6 +80,45 @@ class Negocio{
 
 	public function getNota2(){
 		return $this->nota2;
+	}
+
+
+	public function getFax(){
+		return $this->fax;
+	}
+
+	
+	public function getWhatsapp(){
+		return $this->whatsapp;
+	}
+
+	public function getEmail(){
+		return $this->email;
+	}
+
+
+	public function getShowFax(){
+		return $this->showfax;
+	}
+
+
+	public function getShowWhatsapp(){
+		return $this->showwhatsapp;
+	}
+
+
+	public function getShowEmail(){
+		return $this->showemail;
+	}
+
+
+	public function getShowHeader(){
+		return $this->showheader;
+	}
+
+
+	public function getShowFooter(){
+		return $this->showfooter;
 	}
 
 

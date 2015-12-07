@@ -106,6 +106,68 @@
 						$moneda = $negocio["moneda"];
 						$nota = $negocio["nota_factura"];
 						$nota2 = $negocio["nota_factura2"];
+
+						$showFax = $negocio["showFax"];
+						$app = $negocio["showWhatsapp"];
+						$showEmail = $negocio["showEmail"];
+						$showHeader = $negocio["showHeader"];
+						$showFooter = $negocio["showFooter"];
+
+						if($showFax == '1'){
+
+							$mshowFax = 'checked';
+
+						}else{
+
+							$mshowFax = '';
+
+						}
+
+
+						if($app == '1'){
+
+							$mapp = 'checked';
+
+						}else{
+
+							$mapp = '';
+
+						}
+
+						if($showEmail == '1'){
+
+							$mshowEmail = 'checked';
+
+						}else{
+
+							$mshowEmail = '';
+
+						}
+
+						if($showHeader == '1'){
+
+							$mshowHeader = 'checked';
+
+						}else{
+
+							$mshowHeader = '';
+
+						}
+
+						if($showFooter == '1'){
+
+							$mshowFooter = 'checked';
+
+						}else{
+
+							$mshowFooter = '';
+
+						}
+
+
+
+
+
 						
 					}
 
@@ -149,6 +211,7 @@
 							      <label class="control-label" for="name">Fax</label>
 							      <div class="controls">
 							        <input type="text" class="input-large" name="fax" value="<?php echo $fax ?>">
+							        <input type="checkbox" name="showFax" value="<?php echo $showFax;?>" <?php echo $mshowFax;?> > Mostrar en la Factura.
 							      </div>
 							    </div>
 
@@ -156,6 +219,7 @@
 							      <label class="control-label" for="name">Whatsapp</label>
 							      <div class="controls">
 							        <input type="text" class="input-large" name="whatsapp" value="<?php echo $whatsapp ?>">
+							        <input type="checkbox" name="showWhatsapp" value="<?php echo $app;?>" <?php echo $mapp;?> > Mostrar en la Factura.
 							      </div>
 							    </div>
 
@@ -163,6 +227,7 @@
 							      <label class="control-label" for="name">Email</label>
 							      <div class="controls">
 							        <input type="text" class="input-large" name="email" value="<?php echo $email ?>">
+							        <input type="checkbox" name="showEmail" value="<?php echo $showEmail;?>" <?php echo $mshowEmail;?> > Mostrar en la Factura.
 							      </div>
 							    </div>
 
@@ -184,6 +249,7 @@
 							      <label class="control-label" for="name">Nota Cabezera Factura</label>
 							      <div class="controls">
 							       <textarea class="input-large" id="textarea" rows="3" name="nota"><?php echo $nota?></textarea>
+							       <input type="checkbox" name="showHeader" value="<?php echo $showHeader;?>" <?php echo $mshowHeader;?> > Mostrar en la Factura.
 							      </div>
 							    </div>
 
@@ -191,6 +257,7 @@
 							      <label class="control-label" for="name">Nota Pie Factura</label>
 							      <div class="controls">
 							       <textarea class="input-large" id="textarea" rows="3" name="nota2"><?php echo $nota2?></textarea>
+							       <input type="checkbox" name="showFooter" value="<?php echo $showFooter;?>" <?php echo $mshowFooter;?> > Mostrar en la Factura.
 							      </div>
 							    </div>
 

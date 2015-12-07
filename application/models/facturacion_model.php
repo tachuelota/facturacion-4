@@ -159,12 +159,16 @@ class Facturacion_Model extends CI_Model {
 
 	public function editarNegocio($nombre, $rnc, $direccion, $telefono1, 
 		$fax, $whatsapp, $email,
-		$itbis, $moneda, $nota, $nota2){
+		$itbis, $moneda, $nota, $nota2,
+		 $showFax, $showWhatsapp, 
+		$showEmail, $showHeader, $showFooter){
 
 		$query = "UPDATE negocio_settings SET nombre = '$nombre', rnc = '$rnc', 
 		direccion = '$direccion', telefono1 = '$telefono1',
 		fax = '$fax', whatsapp = '$whatsapp', email = '$email',
-		itbis = $itbis, moneda = '$moneda', nota_factura = '$nota', nota_factura2 = '$nota2'
+		itbis = $itbis, moneda = '$moneda', nota_factura = '$nota', nota_factura2 = '$nota2',
+		showFax = '$showFax', showWhatsapp = '$showWhatsapp', showEmail = '$showEmail',
+		showHeader = '$showHeader', showFooter = '$showFooter'
 		";
 
 		if($this->db->query($query)){

@@ -38,9 +38,68 @@ class Negocio extends CI_Controller {
 			$nota = $this->input->post("nota");
 			$nota2 = $this->input->post("nota2");
 
+			$showFax = $_POST["showFax"];
+			$showWhatsapp = $_POST["showWhatsapp"];
+			$showEmail = $_POST["showEmail"];
+			$showHeader = $_POST["showHeader"];
+			$showFooter = $_POST["showFooter"];
+
+			if(isset($showFax )){
+
+				$showFax = '1';
+
+			}else{
+
+				$showFax = '0';
+
+			}
+
+
+			if(isset($showWhatsapp)){
+
+				$showWhatsapp = '1';
+
+			}else{
+
+				$showWhatsapp = '0';
+
+			}
+
+			if(isset($showEmail)){
+
+				$showEmail = '1';
+
+			}else{
+
+				$showEmail = '0';
+
+			}
+
+			if(isset($showHeader)){
+
+				$showHeader = '1';
+
+			}else{
+
+				$showHeader = '0';
+
+			}
+
+			if(isset($showFooter)){
+
+				$showFooter = '1';
+
+			}else{
+
+				$showFooter = '0';
+
+			}
+
+
 			if($this->facturacion_model->editarNegocio($nombre, $rnc, $direccion, $telefono1,
 			 	$fax, $whatsapp, $email,
-				$itbis, $moneda, $nota, $nota2)){
+				$itbis, $moneda, $nota, $nota2, $showFax, $showWhatsapp, 
+				$showEmail, $showHeader, $showFooter)){
 
 				$this->session->set_flashdata('success', 'Datos Actualizados Correctamente');
 

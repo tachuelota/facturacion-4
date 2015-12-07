@@ -42,16 +42,54 @@ if($tipo == 'factura'){
 
 }
 
-$pie = '';
+//BEGIN SHOW
+$mfax = '';
+$mwhatsapp = '';
+$memail = '';
+$mheader = '';
+$mfooter = '';
 
-if($negocio->getNota2() != ''){
+if($negocio->getShowFax() == '1'){
 
-	$pie = '<div style="text-align: center;">
+	$mfax = 'Fax.: ' .$negocio->getFax().' <br /> ';
+
+}
+
+if($negocio->getShowWhatsapp() == '1'){
+
+	$mwhatsapp = 'Whatsapp.: ' .$negocio->getWhatsapp().' <br /> ';
+
+}
+
+
+if($negocio->getShowEmail() == '1'){
+
+	$memail = 'Email: ' .$negocio->getEmail().' <br /> ';
+
+}
+
+
+if($negocio->getShowHeader() == '1'){
+
+	$mheader = $negocio->getNota().' <br /> ';
+
+}
+
+
+if($negocio->getShowFooter() == '1'){
+
+	$mfooter = '<div style="text-align: center;">
 	<br />
-	-----------------------------------------------------------------------------------------------------------------------------------<br />
+	-------------------------------------------------------------------------------------------------------------------------<br />
 	<br />
 	' . $negocio->getNota2() . '</div><br /><br /><br />';
+
 }
+
+
+
+//END SHOW
+
 
 
 $out .= '
@@ -61,7 +99,10 @@ $out .= '
 '.$negocio->getNota().'<br />
 RNC '.$negocio->getRnc().'<br />
 '.$negocio->getDireccion().'<br />
-Tel.: '.$negocio->getTelefono().'
+Tel.: '.$negocio->getTelefono().'<br />
+'.$mfax.'
+'.$mwhatsapp.'
+'.$memail.'
 </p>
 </div>
 
@@ -108,16 +149,15 @@ $out .= '
 }
 
 $out .='</table>
-<br /><br />
+<br />
 
 <div style="text-align: left;" >
 <b>Subtotal: </b>RD$ ' .$subtotal.' <br />
 <b>ITBIS: </b>RD$' .$impuesto.'<br />
 <b>Total: </b>RD$ ' .$total.' <br />
 </div>
-<br /><br /><br />
 <div style="text-align: center;">
-'.$pie.'
+'.$mfooter.'
 </div>
 ';
 
