@@ -1,0 +1,44 @@
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteEngine on
+
+	# NOTICE: If you get a 404 play with combinations of the following commented out lines
+	#AllowOverride All
+	
+	#RewriteBase /wherever/pyro/is
+
+	#AllowOverride All
+	#RewriteBase /zapps/
+
+	# Keep people out of codeigniter directory and Git/Mercurial data
+	RedirectMatch 403 ^/(application\/cache|codeigniter|\.git|\.hg).*$
+
+	### Canonicalize codeigniter URLs
+
+	# Enforce SSL https://www. 
+	RewriteCond %{HTTPS} !=on
+	RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	#RewriteCond %{HTTP_HOST} !^$
+	#RewriteCond %{HTTP_HOST} !^www\. [NC]
+	#RewriteCond %{HTTPS}s ^on(s)|
+	#RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+	# Send request via index.php (again, not if its a real file or folder)
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+
+	<IfModule mod_php5.c>
+		RewriteRule ^(.*)$ index.php/$1 [L]
+	</IfModule>
+
+	<IfModule !mod_php5.c>
+		RewriteRule ^(.*)$ index.php?/$1 [L]
+	</IfModule>
+
+</IfModule>
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 141.101.75.18
